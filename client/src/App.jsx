@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router , Route } from "react-router-dom";
-import  Navigation from "./components/shared/Navigation";
-import  Footer from "./components/shared/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navigation from "./components/shared/Navigation";
+import Footer from "./components/shared/Footer";
 import NotFound from './components/NotFound';
 
 import Home from './components/Home';
@@ -14,17 +14,16 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Router>  
-        
-        <div>
-        <Navigation/>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/services" component={Services} />        
-        <Route path="/contact" component={Contact} />
-        <Route path="/*" component={NotFound} />
-        <Footer/>
-        </div>
+      <Router>
+        <Navigation />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
       </Router>
     );
   }
