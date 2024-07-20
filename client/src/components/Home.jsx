@@ -10,8 +10,9 @@ export default class Home extends Component {
                 <div className="header">
                     <Grid>
                         <Jumbotron className='jumbotron'>
-                            <h2 style={{ fontSize: '45px' }}>Enjoy Your Dream Vacation</h2>
-                            <h3 style={{ fontSize: '27px' }}>Are you dreaming of a vacation but feeling lost in the planning process? Let us help! Our travel agency can take you to any corner of the world without any confusion or hassle.</h3>
+                            <h2 style={{ fontSize: '45px' }} className='home-font'>Invest today and plan for tomorrow. Let's make your money work for you.</h2>
+                            <h3 style={{ fontSize: '27px' }}>You've got goals?? { ' ' }
+                                &nbsp;We have solutions.</h3>
                             <Link to="/services">
                                 <Button bsStyle="primary" style={{ marginTop: '10px', fontSize: '20px', borderRadius: '12px' }}>More</Button></Link>
                         </Jumbotron>

@@ -7,16 +7,24 @@ export default class Home extends Component{
         <div className="content-wrapper">    
                 <Image src="/assets/img/services.jpg" />
                 <h2 className="heading">Our services</h2>              
-                <h5 className="sub-heading">With us you’ll find a perfect destination among hundreds available.</h5>
+                <h5 className="sub-heading" style={{marginTop:'28px'}}>With us you’ll find a perfect destination among hundreds available.</h5>
                 
             </div>
            <Grid>
-            <Row className= "show-grid text-center">
+            <Row className= "show-grid text-center" style={{display:'flex', justifyContent:'center'}}>
                  <Col xs={12} sm={3} className="place">
-                    <Thumbnail >
-                    <i class="fas fa-plane-departure fa-7x"></i>
-                        <h3>AIR TICKETS</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <Thumbnail style={{height:'400px'}}>
+                            <i class="fas fa-solid fa-money-check fa-7x"></i>
+                        <h3>FUND MANAGEMENT</h3>
+                            <p>
+                                We provide fund management with potential returns ranging from 8% to 220%.
+
+                                No profit sharing: all returns are yours.
+
+                                Withdraw your profits every month.
+
+                                Best financial support available.
+</p>
                         
                         <p>
                         <Button bsStyle="primary">More</Button>
@@ -25,17 +33,22 @@ export default class Home extends Component{
                 </Col>
 
                  <Col xs={12} sm={3} className="place">
-                    <Thumbnail >
-                    <i class="fas fa-ship fa-7x"></i>
-                        <h3>VOYAGES & CRUISES</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        <Thumbnail style={{ height: '400px' }}>
+                            <i class="fas fa-file-invoice fa-7x"></i>
+                        <h3>ACCOUNT MANAGEMENT</h3>
+                            <p>
+                                We provide account management services with potential returns of up to 10% monthly.
+
+                                No upfront fees required.
+
+                                50-50 Profit sharing: we only earn when we generate profits in your account.</p>
                         <p>
                         <Button bsStyle="primary">More</Button>
                         </p>
                     </Thumbnail>                   
                 </Col>
 
-                 <Col xs={12} sm={3} className="place">
+                 {/* <Col xs={12} sm={3} className="place">
                     <Thumbnail >
                     <i class="fas fa-hotel fa-7x"></i>
                         <h3>HOTEL BOOKINGS</h3>
@@ -55,7 +68,7 @@ export default class Home extends Component{
                         <Button bsStyle="primary">More</Button>
                         </p>
                     </Thumbnail>                   
-                </Col>
+                </Col> */}
 
                    
 

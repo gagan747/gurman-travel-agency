@@ -30,3 +30,10 @@
     transform: rotate(360deg);
   }
 }
+
+    @media (max-width: 700px) {
+      .about-img-container {
+        margin: 20px 10px;
+        border: '2px solid red'
+      }
+    }

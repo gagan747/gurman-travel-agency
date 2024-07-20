@@ -8,14 +8,14 @@ import '../../Styles/navigation.css'
 export default class Navigation extends Component{
     render(){
         return(
-           <Navbar fixedTop default collapseOnSelect>
-                <Navbar.Header>
-                <Navbar.Brand>
-                <Link to="/"><Image className="logo"src="/assets/logo.png" style={{width:'123px',height:'22px'}}/> </Link>
+            <Navbar  fixed="top" default collapseOnSelect className='navbar'>
+                <Navbar.Header className='navbar-main'>
+                <Navbar.Brand className='navbar-brand'>
+                <Link to="/"><Image className="logo"src="/assets/logo.jpeg" style={{width:'120px',height:'20px'}}/> </Link>
                 </Navbar.Brand>
-                <Navbar.Toggle/>
-                </Navbar.Header>
-                <Navbar.Collapse>
+                <Navbar.Toggle className='navbar-toggle'/>
+                </Navbar.Header >
+                <Navbar.Collapse >
                     <Nav pullRight>
                     <NavItem eventKey={1} componentClass={Link} href="/" to="/">
                     Home
